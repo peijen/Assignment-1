@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ListView;
 import android.widget.Toast;
 
 public class ListExpenseActivity extends Activity {
@@ -14,7 +15,11 @@ public class ListExpenseActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.list_summary);
+		ListView listview = (ListView) findViewById(R.id.summarylistView);
+		//ArrayAdapter<Expense> expenseAdapter
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {

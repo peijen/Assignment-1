@@ -34,12 +34,12 @@ public class AddActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	/*
+	
 	public void addanexpense(View v){
 		Toast.makeText(this, "Adding expense", Toast.LENGTH_SHORT).show();
-		Intent intent = new Intent(AddActivity.this,.class);
+		Intent intent = new Intent(AddActivity.this,AddExpense.class);
 		startActivity(intent);
 		
 	}
-	*/
+	
 }
