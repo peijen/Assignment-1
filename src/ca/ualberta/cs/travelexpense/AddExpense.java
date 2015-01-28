@@ -1,25 +1,22 @@
 package ca.ualberta.cs.travelexpense;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Toast;
 
-public class AddActivity extends Activity {
+public class AddExpense extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.addactivity);
+		setContentView(R.layout.addexpense);
 	}
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
-		getMenuInflater().inflate(R.menu.add, menu);
+		getMenuInflater().inflate(R.menu.add_expense, menu);
 		return true;
 	}
 
@@ -34,12 +31,4 @@ public class AddActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	/*
-	public void addanexpense(View v){
-		Toast.makeText(this, "Adding expense", Toast.LENGTH_SHORT).show();
-		Intent intent = new Intent(AddActivity.this,.class);
-		startActivity(intent);
-		
-	}
-	*/
 }

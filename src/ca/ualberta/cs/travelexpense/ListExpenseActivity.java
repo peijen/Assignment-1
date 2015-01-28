@@ -1,6 +1,7 @@
 package ca.ualberta.cs.travelexpense;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -37,7 +38,8 @@ public class ListExpenseActivity extends Activity {
 	public void addbutton(View v){
 		
 		Toast.makeText(this, "Adding expense/claim", Toast.LENGTH_SHORT).show();
-		
+		Intent intent = new Intent(ListExpenseActivity.this,AddActivity.class);
+		startActivity(intent);
 	}
 	
 }
